@@ -17,8 +17,13 @@
        }
     }
     else {
-        echo "Database already exists";
+        echo "Database already exists"; //This tells us that the databse file exists in local host
     }
-
+    
+    $query = $connection->query("CREATE TABLE posts (" // we are creating id's for the tables in localhost
+            . "id int(11) NOT NULL AUTO_INCREMENT,"
+            . "title varchar(255) NOT NULL," //this says there is at least 255 charectors for the title
+            . "post text NOT NULL,"
+            . "PRIMARY KEY ()"); //this contains all the text, its not a varchar
     
     $connection-> close();
