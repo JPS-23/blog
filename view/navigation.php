@@ -1,8 +1,5 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+<nav>
+    <ul>
+        <li><a href="../post.php">Blog Post Form</a></li> <!--this creates a link in the webpage-->
+    </ul>
+</nav>
