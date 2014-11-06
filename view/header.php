@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
