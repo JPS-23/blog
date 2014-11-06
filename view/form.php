@@ -8,7 +8,10 @@
     
     <div>
         <label for="post">Post: </label><!--this is just one small area to type in-->
-        <textarea name="post"></textarea><!--you can resize this on the webpage-->
-        
+        <textarea name="post"></textarea><!--you can resize this on the webpage-->    
+    </div>
+    
+    <div>
+        <button type="submit">Submit</button><!--this creates a submit button-->
     </div>
 </form>
