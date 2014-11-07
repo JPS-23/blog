@@ -1,8 +1,8 @@
 <?ph<?php
-    $title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING );
-    $post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING );
+    $title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING );//this post says were are sending and recieving information
+    $post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING );//we are also adding a filter so we can protect our code
     
-    echo "<p>Title: $title</p>";
-    echo "<p>Post: $post<p/>";
+    echo "<p>Title: $title</p>";//this echos out our title
+    echo "<p>Post: $post<p/>";//this also echos out our post
     
     
