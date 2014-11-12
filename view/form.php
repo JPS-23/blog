@@ -1,6 +1,10 @@
+<?php
+    require_once (__DIR__ . "/../model/config.php");
+?>
+
 <h1>Create Blog Post</h1><!--this indicates what the folder is for-->
 
-<form><!--the form code takes in information-->
+<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>"><!--the form code sends information-->
     <div>
         <label for="title">Title: </label><!--this is for the title-->
         <input type="text" name="title" /> <!--the input box is usually on one line-->
