@@ -1,5 +1,5 @@
 <?php
-    require_once(__DIR__ . "/../model/database.php"); // this gets out of the model folder and opens up the database.php folder
+    require_once(__DIR__ . "/../model/config.php"); // this gets out of the model folder and opens up the database.php folder
 
     $connection = new mysqli($host, $username, $password); //this code holds some variables used in the if statement
     
