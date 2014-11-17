@@ -5,5 +5,24 @@ class Database {//This class is a collection of variables and functions creating
     private $username;
     private $password;
     private $database;
+    
+    public function __construct($host, $username, $password, $database) {//its public because we need this to be accessed anywhere
+        $this->host = $host;//the construct function is used to define constructors
+        $this->username = $username;
+        $this->password = $password;
+        $this->database = $database;
+    }
+    
+    public function openConnection() {
+        
+    }
+    
+    public function closeConnection() {
+        
+    }
+    
+    public function query($string) {
+        
+    }
 }
 

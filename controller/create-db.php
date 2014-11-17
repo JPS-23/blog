@@ -33,4 +33,4 @@
         echo "<p>$connection->error</p>"; //this will check if query is false
     }
     
-    $connection-> close();
+    $connection->close();
