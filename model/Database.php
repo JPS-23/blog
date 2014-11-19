@@ -30,7 +30,13 @@ class Database {//This class is a collection of variables and functions creating
     }
 
     public function query($string) {
+        $this->openConnection();
         
+        $query = $this->connection->query($string);
+        
+        $this->closeConnection();
+        
+        return $query;
     }
 
 }
