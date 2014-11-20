@@ -1,4 +1,6 @@
 <?php
+    require_once(__DIR__ . "/database.php");
+    
     $path = "/peraltaj-blog/";//this creates a variable,also modifies the code
     
     $host = "localhost";

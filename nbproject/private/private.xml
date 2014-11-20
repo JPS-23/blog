@@ -5,6 +5,7 @@
         <group>
             <file>file:/C:/xampp/htdocs/peraltaj-blog/controller/create-db.php</file>
             <file>file:/C:/xampp/htdocs/peraltaj-blog/model/Database.php</file>
+            <file>file:/C:/xampp/htdocs/peraltaj-blog/model/config.php</file>
             <file>file:/C:/xampp/htdocs/peraltaj-blog/controller/create-post.php</file>
         </group>
     </open-files>
