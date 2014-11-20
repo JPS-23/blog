@@ -7,6 +7,7 @@ class Database {//This class is a collection of variables and functions creating
     private $username;
     private $password;
     private $database;
+    public $error;
 
     public function __construct($host, $username, $password, $database) {//its public because we need this to be accessed anywhere
         $this->host = $host; //the construct function is used to define constructors
@@ -34,7 +35,7 @@ class Database {//This class is a collection of variables and functions creating
     }
 
     public function openConnection() {
-        $this->connection = new mysqli($this->host, $this->username, $this->password, $this->databse);
+        $this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
 
         if ($this->connection->connect_error) {
             die("<p>Error: " . $this->connection->connect_error . "</p>");
@@ -51,6 +52,10 @@ class Database {//This class is a collection of variables and functions creating
         $this->openConnection();
 
         $query = $this->connection->query($string);
+        
+        if(!$query) {
+            $this->error = $this->connection->error;
+        }
 
         $this->closeConnection();
 
