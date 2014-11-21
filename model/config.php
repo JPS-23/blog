@@ -1,5 +1,6 @@
 <?php
     require_once(__DIR__ . "/database.php");
+    session_start();
     
     $path = "/peraltaj-blog/";//this creates a variable,also modifies the code
     
@@ -8,4 +9,9 @@
     $password = "root";
     $database = "blog_db";
     
-    $connection = new Database($host, $username, $password, $database);//through here we'll have access to the other functions
+    if(!isset ($_SESSION["connection"])) {//we need this if statement to check if the variable really exists
+        $connection = new Database($host, $username, $password, $database);//through here we'll have access to the other functions
+        $_SESSION["connection"] = $connection;
+    }
+    
+    
