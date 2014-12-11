@@ -1,6 +1,7 @@
 <?php
     require_once(__DIR__ . "/database.php");
     session_start();
+    session_regenerate_id(true);//this stops hackers from finding out the session id
     
     $path = "/peraltaj-blog/";//this creates a variable,also modifies the code
     
