@@ -10,7 +10,7 @@
         $row = $query->fetch_array();
         
         if($row["password"] === crypt($password, $row["salt"])) {
-            $_SESSION["authenticated"] = true;
+            $_SESSION["authenticated"] = true;//when the user logs in this is set to true
             echo "<p>Login Successful!</p>";
         }
         else {
