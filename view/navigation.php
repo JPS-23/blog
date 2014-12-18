@@ -1,6 +1,11 @@
 <?php
     require_once(__DIR__ . "/../model/config.php");//the back slash references our webserver root
-//we require files here
+    require_once(__DIR__ . "/../controller/login-verify.php");
+    
+    if(!authenticateUser()) {
+        header("Location: " . $path . "index.php");
+        die();
+    }
     ?> 
 <nav>
     <ul>
